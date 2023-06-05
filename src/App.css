@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 38px;
+  font-weight: 500;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 34px;
+  font-weight: 500;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 26px;
+  font-weight: 500;
+}
+h5 {
+  font-size: 22px;
+  font-weight: 500;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+label {
+  font-size: 18px;
+  font-weight: 500;
+}
+input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+button {
+  margin: 20px 0px;
+  background-color: red;
+  border-radius: 6px;
+  border: 0px;
+  height: 44px;
+  padding: 0px 30px;
+}
+.loginbg {
+  background-image: url(./assets/images/loginBg.gif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.loginContent {
+  border: 1px solid #ffff;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 90%;
+  margin: 0px auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login--leftSide-content {
+  text-align: center;
+  background-color: rgba(206, 0, 0, 1);
+}
+.login--rightSide-content {
+  background-color: #ffff;
+  height: 100%;
+  text-align: center;
+  padding: 40px 70px;
+}
+.textFiled {
+  text-align: left;
+}
+.textFiled label {
+  margin-bottom: 10px;
 }
