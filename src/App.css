@@ -3,6 +3,20 @@ body {
   padding: 0px;
   font-family: "Roboto", sans-serif;
 }
+:root {
+  --black: #181818e6;
+  --white: #ffffff;
+  --danger: red;
+
+  /* font size variale */
+  --small: 20px;
+  --medium: 30px;
+  --large: 38px;
+}
+.sectionSpece {
+  padding: 20px 0px;
+  margin: 20px 0px;
+}
 h1 {
   font-size: 38px;
   font-weight: 500;
@@ -32,38 +46,60 @@ label {
   font-weight: 500;
 }
 input {
-  width: 100%;
   margin-bottom: 30px;
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid;
+}
+input:focus {
+  outline: none;
 }
 button {
   margin: 20px 0px;
-  background-color: red;
+  background-color: var(--black);
+  color: var(--white);
   border-radius: 6px;
   border: 0px;
   height: 44px;
   padding: 0px 30px;
 }
 .loginbg {
-  background-image: url(./assets/images/loginBg.gif);
+  background-image: url(https://imgd.aeplcdn.com/0x0/cw/static/landing-banners/d/new-cars-banner.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+  height: 300px;
 }
 .loginContent {
-  border: 1px solid #ffff;
+  border: 1px solid var(--black);
   border-radius: 6px;
-  overflow: hidden;
   width: 90%;
   margin: 0px auto;
+  position: absolute;
+  top: 25% !important;
+  height: 400px;
+  inset: 0;
+  overflow: hidden;
 }
 .login--leftSide-content {
   text-align: center;
-  background-color: rgba(206, 0, 0, 1);
+  background: url(./assets/images/loginLeftSide.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  position: relative;
+}
+.login--leftSide-content::after {
+  content: "";
+  background: var(--black);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
 }
 .login--rightSide-content {
-  background-color: #ffff;
+  background-color: var(--white);
   height: 100%;
   text-align: center;
   padding: 40px 70px;

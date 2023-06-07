@@ -2,15 +2,13 @@ import { Formik } from "formik";
 import React, { useEffect, useState } from "react";
 import LoginLeftSide from "../assets/images/loginLeftSide.gif";
 
-const Login = () => (
+export const Login = () => (
   <div className="loginbg">
     <div className="container">
       <div className="loginContent">
         <div className="row">
           <div className="col-lg-7 pe-lg-0">
-            <div className="login--leftSide-content">
-              <img src={LoginLeftSide} />
-            </div>
+            <div className="login--leftSide-content"></div>
           </div>
           <div className="col-lg-5 ps-lg-0">
             <div className="login--rightSide-content">
@@ -18,12 +16,13 @@ const Login = () => (
               <Formik
                 initialValues={{ email: "", password: "" }}
                 onSubmit={(values) => {
-                  console.log(JSON.stringify(values, null, 2));
+                  localStorage.setItem("key", JSON.stringify(values));
+                  // console.log(JSON.stringify(values, null, 2));
                 }}
               >
                 {({ values, handleChange, handleSubmit }) => (
                   <form onSubmit={handleSubmit}>
-                    <div className="testFiled">
+                    <div className="textFiled">
                       <div>
                         <label>Email</label>
                       </div>
