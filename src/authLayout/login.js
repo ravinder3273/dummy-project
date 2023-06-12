@@ -1,6 +1,5 @@
 import { Formik } from "formik";
 import React, { useEffect, useState } from "react";
-import LoginLeftSide from "../assets/images/loginLeftSide.gif";
 
 export const Login = () => (
   <div className="loginbg">
